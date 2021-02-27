@@ -320,14 +320,13 @@ MODULE_OBJS := \
 # This module can be built as a plugin
 ifeq ($(ENABLE_GLK), DYNAMIC_PLUGIN)
 PLUGIN := 1
-endif
 
 # Include common rules
 include $(srcdir)/rules.mk
 
 # Skip building the following objects if a static
 # module is enabled, because it already has the contents.
-ifneq ($(ENABLE_GLK), STATIC_PLUGIN)
+else
 # Detection objects
 DETECT_OBJS += $(MODULE)/detection.o
 
