@@ -24,7 +24,6 @@ MODULE_OBJS = \
 # This module can be built as a plugin
 ifeq ($(ENABLE_CGE2), DYNAMIC_PLUGIN)
 PLUGIN := 1
-endif
 
 # Include common rules
 include $(srcdir)/rules.mk
@@ -34,7 +33,7 @@ DETECT_OBJS += $(MODULE)/detection.o
 
 # Skip building the following objects if a static
 # module is enabled, because it already has the contents.
-ifneq ($(ENABLE_CGE2), STATIC_PLUGIN)
+else
 # External dependencies for detection.
 DETECT_OBJS += $(MODULE)/fileio.o
 endif
