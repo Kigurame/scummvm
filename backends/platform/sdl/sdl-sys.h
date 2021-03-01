@@ -141,13 +141,13 @@
 #if defined(__SYMBIAN32__)
 #include <esdl\SDL.h>
 #else
-#include <SDL.h>
+#include <SDL2/SDL.h>
 #endif
 
 // Ignore warnings from system headers pulled by SDL
 #pragma warning(push)
 #pragma warning(disable:4121) // alignment of a member was sensitive to packing
-#include <SDL_syswm.h>
+#include <SDL2/SDL_syswm.h>
 #pragma warning(pop)
 
 // Restore the forbidden exceptions from the hack above
