@@ -67,11 +67,11 @@
 #endif
 
 #ifdef USE_SDL_NET
-#include <SDL_net.h>
+#include <SDL2/SDL_net.h>
 #endif
 
 #if SDL_VERSION_ATLEAST(2, 0, 0)
-#include <SDL_clipboard.h>
+#include <SDL2/SDL_clipboard.h>
 #endif
 
 OSystem_SDL::OSystem_SDL()
