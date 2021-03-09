@@ -634,6 +634,21 @@ static const ComposerGameDescription gameDescriptions[] = {
 		GType_ComposerV2
 	},
 
+	// Warcraft Adventures - Lord of the CLans
+	{
+		{"WarcraftAdv",
+		 0,
+		 {{"BOOK.INI", GAME_CONFIGFILE, "8f4f3ab0fd3f740225516ed97adbeb40", 7260},
+		  AD_LISTEND},
+		 Common::EN_ANY,
+		 Common::kPlatformWindows,
+		 ADGF_NO_FLAGS,
+		 GUIO2(GUIO_NOASPECT, GUIO_NOMIDI)
+		},
+		GType_ComposerV2
+	},
+
+
 	{ AD_TABLE_END_MARKER, 0 }
 };
 
