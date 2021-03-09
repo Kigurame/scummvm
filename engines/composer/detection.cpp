@@ -35,6 +35,7 @@ static const PlainGameDescriptor composerGames[] = {
 	{"magictales", "Magic Tales"},
 	{"princess", "Magic Tales: The Princess and the Crab"},
 	{"sleepingcub", "Magic Tales: Sleeping Cub's Test of Courage"},
+	{"WarcraftAdv", "Warcraft Adventures - Lord of the CLans"},
 	{0, 0}
 };
 
